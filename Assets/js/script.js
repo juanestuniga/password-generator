@@ -1,5 +1,12 @@
 // Assignment code here
 
+var characters = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ", "abcdefghijklnmopqrstuvwxyz", "0123456789", 
+ "~!@#$%^&*()-_=+"];
+
+var userInput = "";
+
+var password = "";
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -12,6 +19,9 @@ function writePassword() {
   passwordText.value = password;
 
 }
+
+// Character length prompt
+
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
