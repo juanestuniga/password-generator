@@ -12,10 +12,10 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  password = generatePassword();
   var passwordText = document.querySelector("#password");
-  passwordText.value = password;
+  password = generatePassword();
   passwordText.value = ''; 
+  passwordText.value = password;
 }
 
 // Character length prompt
@@ -33,25 +33,15 @@ false) {
   var symbol = false
 
   while (true) {
-    // Uppercase pop up
-    upper = confirm("Click OK to confirm uppercase characters");
-
-    // Lowercase pop up
-    lower = confirm("Click OK to confirm lowercase characters");
-
-    // Numeric pop up
-    number = confirm("Click OK to confirm numeric characters");
-
-    // Special charcter  pop up
-    symbol = confirm("Click OK to confirm special characters (~!@#$%^&*()-_=+)");
+ 
+    upper = window.confirm("Click OK to confirm uppercase characters");
+    lower = window.confirm("Click OK to confirm lowercase characters");
+    number = window.confirm("Click OK to confirm numeric characters");
+    symbol = window.confirm("Click OK to confirm special characters (~!@#$%^&*()-_=+)");
 
     break;
   }
 
-  console.log('Using upper', upper);
-  console.log('Using lower', lower);
-  console.log('Using number', number);
-  console.log('Using symbol', symbol);
 
   upper && (userInput += characters[0])
 
