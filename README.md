@@ -6,7 +6,7 @@ A website to generate random passwords. w
 This is a webite with a random password genreator. It gives the user the option of length and the use of special charactrers, numbers, uppercase and lower case letters. 
 
 ## Link
--[Random-Password-Generator Repo](git@github.com:juanestuniga/password-generator.git)
+-[Random-Password-Generator Repo](https://github.com/juanestuniga/password-generator.git)
 
 -[Live](https://juanestuniga.github.io/password-generator/) 
 
