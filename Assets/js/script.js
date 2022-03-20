@@ -7,17 +7,15 @@ var userInput = "";
 
 var password = "";
 
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
+  password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
-
+  passwordText.value = ''; 
 }
 
 // Character length prompt
